@@ -17,14 +17,18 @@ for (var i = 0; i < 100; i = i + 1) {
 6 times.
 
 ### What are two ways of increasing the spacing between rings?
-'''increase the Z variable in the following lines of code:
+increase the Z variable in the following lines of code:
+
+```
   for (var i = 0; i < x.length; i = i + Z) {
     ellipse(x[i], y[i], 1 + Z*(x.length - i));
   }
-'''
+```
 
 ### How can you make the ellipse trail longer?
-'''increase the Z variable in the following lines of code:
+increase the Z variable in the following lines of code:
+
+```  
   x = x.slice(-Z); // keep the last Z x values
   y = y.slice(-Z); // keep the last Z y values
-  '''
+```
